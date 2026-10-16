@@ -1,9 +1,8 @@
 {
-  "generated_at": "2026-10-16T09:11:04.285Z",
+  "generated_at": "2026-10-16T09:16:21.828Z",
   "kind": "public-source-snapshot",
   "owner": "2426269",
   "source_head": "5fed2cbf64e860554740c62810aff7df02d911b9",
-  "scope": "Selected working-tree source, documents and samples; no private runtime data or stable release guarantee",
   "files": [
     {
       "path": ".gitattributes",
@@ -36,6 +35,36 @@
       "sha256": "50d7db3a6949e2b32b89f4910783a932223a89ac17c6a1633a0cc0dbcff977a6"
     },
     {
+      "path": "LICENSE",
+      "bytes": 1064,
+      "sha256": "814bb71574c98986ba0412d339c182ef4912aff7b7da6664e03cde19f6709152"
+    },
+    {
+      "path": "PUBLISHING.md",
+      "bytes": 1736,
+      "sha256": "ba24fb8936324ee1f1c3cb3179a8fc0fa33b7f6a1226e0fe5402f78f37f45e51"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7430,
+      "sha256": "83cf9d0bb396fecffbb8316b79481f452d38d6be1d07f296262c180ac7569136"
+    },
+    {
+      "path": "REPOSITORY-REVIEW.md",
+      "bytes": 9475,
+      "sha256": "73386c050012223eea867757f9131e70aece79deba19cb40ce9a3a74de285514"
+    },
+    {
+      "path": "STATUS.md",
+      "bytes": 7671,
+      "sha256": "5ccb0c0ee67b49e63c2842ba15ad925fc27becba0f29b31f5fbc2822697f1506"
+    },
+    {
+      "path": "TASK_LOG.md",
+      "bytes": 39417,
+      "sha256": "9d24c0e59a66a5fbba57744f48197d249f699c4ee62b73a2664b7103bbbc0fbe"
+    },
+    {
       "path": "docs/plans/2026-09-21-semantic-judge-redesign.md",
       "bytes": 4529,
       "sha256": "cee2378ba59568ee7ce4364b6aa0eea5651a6f62f220ebedb2f699b33f8a7fbb"
@@ -51,6 +80,16 @@
       "sha256": "cd128adb783537175e0336dcd0b8668a3c40856f3d8ff21b1839be3e14ee33c5"
     },
     {
+      "path": "evaluation/README.md",
+      "bytes": 3943,
+      "sha256": "5036a45f3ebd309cb27b300b1245c6fcc8185e43f94f7fa420c8a853534729b5"
+    },
+    {
+      "path": "evaluation/V2-PROTOCOL.md",
+      "bytes": 3454,
+      "sha256": "6a05c9ecce0bf68789e69ac8056a76a98d8bb92f2584bbd94d98a8cb7cde1fd2"
+    },
+    {
       "path": "evaluation/prompt-preservation-v1.jsonl",
       "bytes": 6706,
       "sha256": "2d10c8008c7c42b155ae60d04908ebef56b3712868cfa30bd56fe1221ad98009"
@@ -59,11 +98,6 @@
       "path": "evaluation/prompt-preservation-v2.jsonl",
       "bytes": 24849,
       "sha256": "7e42c7cfc3153b6c950242400f518bc62c06d89081bf55a722effdac890c9dd4"
-    },
-    {
-      "path": "evaluation/README.md",
-      "bytes": 3943,
-      "sha256": "5036a45f3ebd309cb27b300b1245c6fcc8185e43f94f7fa420c8a853534729b5"
     },
     {
       "path": "evaluation/runs/20260921T212008+0800/cases.jsonl",
@@ -96,9 +130,9 @@
       "sha256": "af91ccb62f1081bd320e65b228a93d4608405f36d413f219340c272b44251c15"
     },
     {
-      "path": "evaluation/V2-PROTOCOL.md",
-      "bytes": 3454,
-      "sha256": "6a05c9ecce0bf68789e69ac8056a76a98d8bb92f2584bbd94d98a8cb7cde1fd2"
+      "path": "examples/README.md",
+      "bytes": 1519,
+      "sha256": "744e866dc1a514edb6a62d2fb6051e098af7eacd5c2eda2dbacec2cedf18ae71"
     },
     {
       "path": "examples/context-batch.json",
@@ -116,19 +150,9 @@
       "sha256": "6f89501ff99602d3d6a3f9ad91e7ba6e9befdb35672f4603328bf5a9164ca8b3"
     },
     {
-      "path": "examples/README.md",
-      "bytes": 1519,
-      "sha256": "744e866dc1a514edb6a62d2fb6051e098af7eacd5c2eda2dbacec2cedf18ae71"
-    },
-    {
       "path": "examples/result.mock.json",
       "bytes": 1936,
       "sha256": "48400a1f071b89db92c909f31fddc2087b1519eb5f6abcf7174c0bcda78fb716"
-    },
-    {
-      "path": "LICENSE",
-      "bytes": 1064,
-      "sha256": "814bb71574c98986ba0412d339c182ef4912aff7b7da6664e03cde19f6709152"
     },
     {
       "path": "local-runtime/.gitignore",
@@ -164,6 +188,16 @@
       "path": "output/playwright/semantic-judge-multitype.png",
       "bytes": 136300,
       "sha256": "7e7cae793c6d6fceafa0b43833356655da073d561a81ceabc66be70ba36aead3"
+    },
+    {
+      "path": "plugin/ComfyUI-Jev-Decision/LICENSE",
+      "bytes": 1064,
+      "sha256": "814bb71574c98986ba0412d339c182ef4912aff7b7da6664e03cde19f6709152"
+    },
+    {
+      "path": "plugin/ComfyUI-Jev-Decision/README.md",
+      "bytes": 7472,
+      "sha256": "4de6239eef7843099656c6e219b1ce9b9a37cfb98e067c6ec04d2f595ce256e0"
     },
     {
       "path": "plugin/ComfyUI-Jev-Decision/__init__.py",
@@ -231,11 +265,6 @@
       "sha256": "43b275d7cb5bd141581cb0575e3939fc59fa25c97f41633306fd4607ad27fbd4"
     },
     {
-      "path": "plugin/ComfyUI-Jev-Decision/LICENSE",
-      "bytes": 1064,
-      "sha256": "814bb71574c98986ba0412d339c182ef4912aff7b7da6664e03cde19f6709152"
-    },
-    {
       "path": "plugin/ComfyUI-Jev-Decision/provider.py",
       "bytes": 3633,
       "sha256": "92edeea6e2958ca1744dd0c9e44a17d81f056e8e1915d55c2f75969965794cac"
@@ -244,11 +273,6 @@
       "path": "plugin/ComfyUI-Jev-Decision/pyproject.toml",
       "bytes": 327,
       "sha256": "4c50b73f151b5958e79eb27cdea5492afb3917890b8b02b2f046de68ccc9c2b4"
-    },
-    {
-      "path": "plugin/ComfyUI-Jev-Decision/README.md",
-      "bytes": 7472,
-      "sha256": "4de6239eef7843099656c6e219b1ce9b9a37cfb98e067c6ec04d2f595ce256e0"
     },
     {
       "path": "plugin/ComfyUI-Jev-Decision/tests/__init__.py",
@@ -274,21 +298,6 @@
       "path": "plugin/ComfyUI-Jev-Decision/tests/test_provider.py",
       "bytes": 13065,
       "sha256": "4b228533c3b5cb1822f183e343f4a932e36e4cf14d9a7cf4a64cb5262d750016"
-    },
-    {
-      "path": "PUBLISHING.md",
-      "bytes": 1736,
-      "sha256": "ba24fb8936324ee1f1c3cb3179a8fc0fa33b7f6a1226e0fe5402f78f37f45e51"
-    },
-    {
-      "path": "README.md",
-      "bytes": 7430,
-      "sha256": "83cf9d0bb396fecffbb8316b79481f452d38d6be1d07f296262c180ac7569136"
-    },
-    {
-      "path": "records/choice-score-smoke-20260922.json",
-      "bytes": 2920,
-      "sha256": "28bae90fb95019b99519f1fe71885b6c697600d7302da5c932ae360763b15ff1"
     },
     {
       "path": "records/GOV-20260921-001-validation.json",
@@ -341,19 +350,9 @@
       "sha256": "dd784f887ca10a30a811776eea389f749348555a8cd2943ca336f017b9927aec"
     },
     {
-      "path": "REPOSITORY-REVIEW.md",
-      "bytes": 9475,
-      "sha256": "73386c050012223eea867757f9131e70aece79deba19cb40ce9a3a74de285514"
-    },
-    {
-      "path": "STATUS.md",
-      "bytes": 7458,
-      "sha256": "a92c491098a289e9efdc9334a0e37c8b6bb268891088a579bf43e41df5555261"
-    },
-    {
-      "path": "TASK_LOG.md",
-      "bytes": 38099,
-      "sha256": "7002fab83d0ce08c51c69998708f9dc42a81c1f9cb25416761082ba311e933cd"
+      "path": "records/choice-score-smoke-20260922.json",
+      "bytes": 2920,
+      "sha256": "28bae90fb95019b99519f1fe71885b6c697600d7302da5c932ae360763b15ff1"
     },
     {
       "path": "tests/test_prompt_preservation_eval.py",
@@ -366,14 +365,14 @@
       "sha256": "4c3badfaffc0a2334cf573fa885c291fb7828d2252ecde2ddd9eb6d9fcd04c6c"
     },
     {
-      "path": "tools/evaluate_prompt_preservation_v2.py",
-      "bytes": 28688,
-      "sha256": "8c503a0e627241a8bdc9b88b3e2fae2135b40882cf1d6e6587561edad90c1122"
-    },
-    {
       "path": "tools/evaluate_prompt_preservation.py",
       "bytes": 23911,
       "sha256": "de315932175bf406c31518dbfb8204e76bb50b18f6685a1992034940e1475e03"
+    },
+    {
+      "path": "tools/evaluate_prompt_preservation_v2.py",
+      "bytes": 28688,
+      "sha256": "8c503a0e627241a8bdc9b88b3e2fae2135b40882cf1d6e6587561edad90c1122"
     },
     {
       "path": "tools/frontend_multitype_roundtrip.js",
@@ -396,11 +395,12 @@
       "sha256": "0ca851f51f48b670be141536e7be6d0e78d1a39d918de1b6650555f7ca92ab98"
     }
   ],
+  "scope": "source/documents/examples, not a stable release",
+  "validation": "47 unittest passed with fake backend; no paid requests",
   "exclusions": [
-    "credentials and sessions",
-    "private databases and user assets",
-    "node_modules/venvs/builds",
-    "third-party reference clones and archived binaries"
-  ],
-  "test_record": "See task delivery evidence; dependencies are not included"
+    "private runtime data and credentials",
+    "models and databases",
+    "dependencies and compiled binaries",
+    "third-party reference clones"
+  ]
 }

@@ -5,6 +5,7 @@
 - 用户明确授权公开至 GitHub 2426269，并为第一方代码选择 MIT；根目录及 nodepack LICENSE 已添加。
 - 公开范围为经过筛选的开发源码、文档、样例与脱敏证据；排除 local-runtime 私人配置、research 第三方副本、旧归档、缓存与浏览器状态。
 - 本次不改变运行时逻辑、不提交付费请求、不重启用户实例；不将公开快照等同稳定版发布，以下历史实现/验证状态保持原口径。
+- 已公开：https://github.com/2426269/ComfyUI-Jev-Decision 。本轮在隔离发布副本运行47项 nodepack unittest，全部通过；使用现有本地 ComfyUI 环境和 fake backend，没有付费推理。
 
 更新日期：2026-09-22。当前阶段：Semantic Judge P0.3 契约与三态配方加固已实现；SJ18-v1 基础集与 SJ18-v2 中英文成对难例评测均已完成。
 
