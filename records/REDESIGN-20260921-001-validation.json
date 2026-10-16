@@ -1,0 +1,42 @@
+{
+  "task_id": "REDESIGN-20260921-001",
+  "generated_at": "2026-09-21T09:02:56.1884889+08:00",
+  "status": "redesign_documented",
+  "scope": "Documentation and baseline freeze only; no Python behavior change and no API request.",
+  "accepted_public_contract": {
+    "node_id": "JevSemanticJudge",
+    "modes": ["Noul", "Choice", "Score"],
+    "outputs": ["BOOLEAN", "FLOAT", "INT", "STRING", "details_json"],
+    "runtime_backends": ["typesafe"]
+  },
+  "baseline_archive": {
+    "path": "records/artifacts/ComfyUI-Jev-Decision-P0-baseline-20260921T0854+0800.zip",
+    "bytes": 67823,
+    "entries": 35,
+    "sha256": "a9c71a714566f64a653dcfe6c0dde534645872a1f5625747d918267638bec370",
+    "hash_matches": true,
+    "read_only": true,
+    "contains_credential_file": false,
+    "contains_research_copy": false
+  },
+  "checks": {
+    "first_party_json_parsed": 12,
+    "local_markdown_links_checked": 33,
+    "broken_local_links": 0,
+    "credential_matches_outside_env_file": 0,
+    "python_tests_run": false,
+    "api_requests": 0
+  },
+  "documents": [
+    "README.md",
+    "DESIGN.md",
+    "ACCEPTANCE.md",
+    "STATUS.md",
+    "DECISIONS.md",
+    "AGENTS.md",
+    "docs/plans/2026-09-21-semantic-judge-redesign.md",
+    "docs/superpowers/plans/2026-09-21-semantic-judge-rewrite.md"
+  ],
+  "external_primary_source": "https://github.com/typesafe-ai/typesafe-sdk-python",
+  "implementation_state": "The existing nodepack still registers the archived four-node P0 probe. The new node contract is not implemented."
+}

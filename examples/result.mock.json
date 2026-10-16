@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "kind": "result",
+  "provider": "typesafe",
+  "model": "fixture-only",
+  "questions": {
+    "preserves_meaning": {
+      "type": "noul",
+      "instructions": "Does rewritten preserve the subjects, count, activity, style, composition and explicit exclusions in original, under requirements?"
+    },
+    "route": {
+      "type": "choice",
+      "instructions": "Which treatment is appropriate for rewritten compared with original under requirements? Judge directly from these fields.",
+      "criteria": {
+        "accept": "The rewrite preserves the required meaning and only makes allowed changes.",
+        "keep_original": "The rewrite changes required meaning or violates an explicit restriction.",
+        "review": "The supplied information does not establish whether the changes are allowed."
+      }
+    },
+    "wording_change": {
+      "type": "score",
+      "instructions": "How much has the wording changed between original and rewritten? Judge wording rather than semantic correctness.",
+      "criteria": [
+        "Identical wording apart from punctuation.",
+        "Small local wording changes.",
+        "Substantial rephrasing while recognizable phrases remain.",
+        "Nearly all wording is different."
+      ]
+    }
+  },
+  "answers": {
+    "preserves_meaning": {"type": "noul", "noul": 0.93},
+    "route": {
+      "type": "choice",
+      "choice": "accept",
+      "probabilities": {"accept": 1.0, "keep_original": 0.0, "review": 0.0},
+      "confidence": 1.0
+    },
+    "wording_change": {
+      "type": "score",
+      "score": 1.0,
+      "legend": {
+        "0": "Identical wording apart from punctuation.",
+        "1": "Small local wording changes.",
+        "2": "Substantial rephrasing while recognizable phrases remain.",
+        "3": "Nearly all wording is different."
+      },
+      "probabilities": {"0": 0.0, "1": 1.0, "2": 0.0, "3": 0.0},
+      "confidence": 1.0
+    }
+  }
+}

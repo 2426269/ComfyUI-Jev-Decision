@@ -1,0 +1,245 @@
+{
+  "generated_at": "2026-09-21T09:30:20.2758659+08:00",
+  "status": "semantic_judge_p0_engineering_complete",
+  "task_id": "SJ-P0-20260921-001",
+  "evidence": "records/SJ-P0-20260921-001-validation.json",
+  "baseline_archive": "records/artifacts/ComfyUI-Jev-Decision-P0-baseline-20260921T0854+0800.zip",
+  "previous_manifest": "records/manifest-20260921-redesign.json",
+  "implementation_commit": "aa8c173f244549d8fde0b74a1151fb7990e10530",
+  "exclusions": [
+    "manifest.json",
+    "records/manifest-*",
+    "research/**",
+    "local-runtime/.env.local",
+    "**/__pycache__/**",
+    "**/*.pyc",
+    "**/*.log"
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 32,
+      "sha256": "74f066599d3fe2817756c3e532a869d370d4294c5c0a188487da2855f9b2378e"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 95,
+      "sha256": "b0cfc880476760be469f9314a369db73b259d2e0d0a067abf73f887189221e35"
+    },
+    {
+      "path": "ACCEPTANCE.md",
+      "bytes": 5866,
+      "sha256": "ae4d7963b138b597c42953db68b8846de8c15d3ffff51035e8ee792db3bcb4e1"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 10373,
+      "sha256": "da37f9f1f513fa1adb9f70a2759ce071a447177da2ef3eb497b9ba25f912a5b8"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 3676,
+      "sha256": "975a99f9aa9ae9066d38314a850c8cd1d39363f0bd6aafe8be723e92b5ee2d21"
+    },
+    {
+      "path": "DESIGN.md",
+      "bytes": 11572,
+      "sha256": "6ee58e6c95250755b0e7f72e45b1e52d67ba06a3f833a1a18b8bf77fc260c3e2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3500,
+      "sha256": "2dad46dce4171c46fae0ed2f43b437a40b278ddc5dbe6582b3281f2afcd9988d"
+    },
+    {
+      "path": "REPOSITORY-REVIEW.md",
+      "bytes": 9475,
+      "sha256": "73386c050012223eea867757f9131e70aece79deba19cb40ce9a3a74de285514"
+    },
+    {
+      "path": "STATUS.md",
+      "bytes": 2856,
+      "sha256": "c6212c7e3efaa7f404eb451c1eaa6f1b4ebc6621e8dc7f7d3104628ee81614ce"
+    },
+    {
+      "path": "TASK_LOG.md",
+      "bytes": 17083,
+      "sha256": "433fca6f333974d289642678f7ee5c56bd77db04699a24100e6f8fe91d33c56e"
+    },
+    {
+      "path": "docs\\plans\\2026-09-21-semantic-judge-redesign.md",
+      "bytes": 4529,
+      "sha256": "cee2378ba59568ee7ce4364b6aa0eea5651a6f62f220ebedb2f699b33f8a7fbb"
+    },
+    {
+      "path": "docs\\superpowers\\plans\\2026-09-21-p0-noul-vertical-slice.md",
+      "bytes": 9361,
+      "sha256": "665fd927dc7b94e2a104458c2069562492394aa3fedde200bb53e4b1c89f5640"
+    },
+    {
+      "path": "docs\\superpowers\\plans\\2026-09-21-semantic-judge-rewrite.md",
+      "bytes": 6294,
+      "sha256": "cd128adb783537175e0336dcd0b8668a3c40856f3d8ff21b1839be3e14ee33c5"
+    },
+    {
+      "path": "examples\\README.md",
+      "bytes": 1132,
+      "sha256": "cfa01113fe4046bbc5f915ce9bb6e25d4951e35389f982aaf88b3334c1428e9c"
+    },
+    {
+      "path": "examples\\context-batch.json",
+      "bytes": 228,
+      "sha256": "1d007001969f81f4b9b806e837c266e6b1c7179ecb5e4ef621c55974a5082831"
+    },
+    {
+      "path": "examples\\context.json",
+      "bytes": 472,
+      "sha256": "48afa8798c9a5616d0f85f2f0c890e879795c4315474b56afe42125837f1aeda"
+    },
+    {
+      "path": "examples\\questions.json",
+      "bytes": 1222,
+      "sha256": "6f89501ff99602d3d6a3f9ad91e7ba6e9befdb35672f4603328bf5a9164ca8b3"
+    },
+    {
+      "path": "examples\\result.mock.json",
+      "bytes": 1936,
+      "sha256": "48400a1f071b89db92c909f31fddc2087b1519eb5f6abcf7174c0bcda78fb716"
+    },
+    {
+      "path": "local-runtime\\.gitignore",
+      "bytes": 11,
+      "sha256": "10edf395121888b825269ff19c83f8531dc38df96c5927b2e09a6cfc6e86d06a"
+    },
+    {
+      "path": "local-runtime\\README.md",
+      "bytes": 1059,
+      "sha256": "99602276d5c114fd44651c28836f9e7a4156947328011ed82ffc188643f362e0"
+    },
+    {
+      "path": "local-runtime\\run_comfyui_with_jev.cmd",
+      "bytes": 95,
+      "sha256": "d90b9ed26cf93cea935401f894aed654e5412dc0af3c856f549f4fe00378d30b"
+    },
+    {
+      "path": "local-runtime\\run_comfyui_with_jev.ps1",
+      "bytes": 2092,
+      "sha256": "78b96a7f1313a491b7839f93f453a54f24e934b431eb7164f4847a23039a3606"
+    },
+    {
+      "path": "plugin\\ComfyUI-Jev-Decision\\README.md",
+      "bytes": 3730,
+      "sha256": "6c8cd5aed7e8608cf6adab1ae2d9d3548814f5f3aeed5a44c5024cbea6b1f85a"
+    },
+    {
+      "path": "plugin\\ComfyUI-Jev-Decision\\__init__.py",
+      "bytes": 167,
+      "sha256": "fede19321102043f8fef9f66c9ec9b51c477884bd3cb1a0125aa5bb537d8b8b9"
+    },
+    {
+      "path": "plugin\\ComfyUI-Jev-Decision\\backend.py",
+      "bytes": 4003,
+      "sha256": "108360a597844d155d937075e3f15e81f69ee2a336edb7429310f8a7325c8b6b"
+    },
+    {
+      "path": "plugin\\ComfyUI-Jev-Decision\\decision_nodes.py",
+      "bytes": 4503,
+      "sha256": "3cf81eb15dffa5d1e530d72736fbc4a6e9559552c41184291ed6b8767318f93e"
+    },
+    {
+      "path": "plugin\\ComfyUI-Jev-Decision\\decision_protocol.py",
+      "bytes": 13518,
+      "sha256": "4abed76063fe6e3d900e25f43d648965ba72a708c9d52ad692c2683c7aed192d"
+    },
+    {
+      "path": "plugin\\ComfyUI-Jev-Decision\\examples\\semantic-judge-choice.api.json",
+      "bytes": 1227,
+      "sha256": "152f9ce5fc3b9c61c1df3af9766da72fa21a50cfdfe984066da3b8fe857443ac"
+    },
+    {
+      "path": "plugin\\ComfyUI-Jev-Decision\\examples\\semantic-judge-noul.api.json",
+      "bytes": 1248,
+      "sha256": "cbcddc34acdfec4627506b8f5ccf7f0c96139be8129fbef25c768021fc197111"
+    },
+    {
+      "path": "plugin\\ComfyUI-Jev-Decision\\examples\\semantic-judge-score.api.json",
+      "bytes": 1197,
+      "sha256": "663915c26c015c0a58d0dcb9bcbc9e316a0b84ee130b2c1088bb5770813d231c"
+    },
+    {
+      "path": "plugin\\ComfyUI-Jev-Decision\\provider.py",
+      "bytes": 3633,
+      "sha256": "92edeea6e2958ca1744dd0c9e44a17d81f056e8e1915d55c2f75969965794cac"
+    },
+    {
+      "path": "plugin\\ComfyUI-Jev-Decision\\pyproject.toml",
+      "bytes": 327,
+      "sha256": "4c50b73f151b5958e79eb27cdea5492afb3917890b8b02b2f046de68ccc9c2b4"
+    },
+    {
+      "path": "plugin\\ComfyUI-Jev-Decision\\tests\\__init__.py",
+      "bytes": 43,
+      "sha256": "8c7cb1625026bbddea6856dc3e0f490c86553fe0f03a62f4889295167fa5bd1a"
+    },
+    {
+      "path": "plugin\\ComfyUI-Jev-Decision\\tests\\test_comfy_execution.py",
+      "bytes": 5766,
+      "sha256": "ec8d94cbb4d0cc948552f6931e41c7991179147ee89dd2801326109d9869e530"
+    },
+    {
+      "path": "plugin\\ComfyUI-Jev-Decision\\tests\\test_nodes.py",
+      "bytes": 4525,
+      "sha256": "2f88722f139b8d8fbdb121a77a46764e89ac83a1cd4917b80252ce3e06016fa6"
+    },
+    {
+      "path": "plugin\\ComfyUI-Jev-Decision\\tests\\test_protocol.py",
+      "bytes": 11882,
+      "sha256": "2796a10203595c9806b235c07842749cb20bb782a3428a832ca720819780c47c"
+    },
+    {
+      "path": "plugin\\ComfyUI-Jev-Decision\\tests\\test_provider.py",
+      "bytes": 12190,
+      "sha256": "a0e49e026ee4c0a9622821aa9cd7712a288dd91033090ef6319af062faab2b59"
+    },
+    {
+      "path": "records\\GOV-20260921-001-validation.json",
+      "bytes": 864,
+      "sha256": "629b924099e9e87ae23e69f07be77717e05b6b0cf40968effe31964f8aa07763"
+    },
+    {
+      "path": "records\\P0-20260921-001-validation.json",
+      "bytes": 2287,
+      "sha256": "f17e3c87824e9700e61b9220a933c8ff7ce5c817ede5d5f1db4c49033b10d80d"
+    },
+    {
+      "path": "records\\REDESIGN-20260921-001-baseline.json",
+      "bytes": 881,
+      "sha256": "b71d2553ef162932ce4654212666ac071f78a8eb1ab0ebb27d0b819569b82927"
+    },
+    {
+      "path": "records\\REDESIGN-20260921-001-validation.json",
+      "bytes": 1515,
+      "sha256": "9dd925950e65c23f60ae971417e3f3da93d21a6a31cb785d1d3ab39e92b133e2"
+    },
+    {
+      "path": "records\\SJ-P0-20260921-001-validation.json",
+      "bytes": 4317,
+      "sha256": "2b71dfc828c62dab11d51a554711a2d770a60c52bd78ca301c77cf9b169f0654"
+    },
+    {
+      "path": "records\\TASK-TEMPLATE.md",
+      "bytes": 1251,
+      "sha256": "dd784f887ca10a30a811776eea389f749348555a8cd2943ca336f017b9927aec"
+    },
+    {
+      "path": "records\\artifacts\\ComfyUI-Jev-Decision-P0-baseline-20260921T0854+0800.zip",
+      "bytes": 67823,
+      "sha256": "a9c71a714566f64a653dcfe6c0dde534645872a1f5625747d918267638bec370"
+    },
+    {
+      "path": "tools\\real_smoke.py",
+      "bytes": 3752,
+      "sha256": "0ca851f51f48b670be141536e7be6d0e78d1a39d918de1b6650555f7ca92ab98"
+    }
+  ]
+}

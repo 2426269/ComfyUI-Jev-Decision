@@ -1,0 +1,201 @@
+{
+  "task_id": "SJ18-V2-20260921-001",
+  "status": "completed",
+  "recorded_at": "2026-09-21T21:38:37.741496+08:00",
+  "implementation_commit": "e57772636b0a75bba7a647ad5fcbee3f144b1e94",
+  "scope": "Paired bilingual prompt-preservation diagnostic with calibration and independent validation splits.",
+  "dataset": {
+    "path": "evaluation/prompt-preservation-v2.jsonl",
+    "sha256": "7e42c7cfc3153b6c950242400f518bc62c06d89081bf55a722effdac890c9dd4",
+    "cases": 24,
+    "pairs": 12,
+    "splits": {
+      "calibration": 12,
+      "validation": 12
+    },
+    "languages": {
+      "en": 12,
+      "zh": 12
+    },
+    "class_counts_per_split": {
+      "positive": 6,
+      "negative": 6
+    },
+    "negative_change_types_per_split": [
+      "deletion",
+      "contradiction",
+      "count_or_relation",
+      "prohibition_violation",
+      "style_or_medium",
+      "attribute_scope"
+    ]
+  },
+  "real_api_run": {
+    "run_id": "20260921T213420+0800",
+    "status": "complete",
+    "request_attempts": 24,
+    "successful_responses": 24,
+    "failed_responses": 0,
+    "automatic_retries": 0,
+    "requested_model": "jev-latest",
+    "returned_models": {
+      "jev-1.13.0": 24
+    },
+    "usage_totals": {
+      "input_tokens": 13561,
+      "output_tokens": 480
+    },
+    "elapsed_ms_total": 20905
+  },
+  "reference_threshold_0_50": {
+    "all": {
+      "metrics": {
+        "threshold": 0.5,
+        "sample_count": 24,
+        "confusion_matrix": {
+          "tp": 12,
+          "tn": 11,
+          "fp": 1,
+          "fn": 0
+        },
+        "accuracy": 0.9583333333333334,
+        "balanced_accuracy": 0.9583333333333333,
+        "precision": 0.9230769230769231,
+        "recall": 1.0,
+        "specificity": 0.9166666666666666,
+        "f1": 0.9600000000000001
+      },
+      "brier_score": 0.055987499999999996,
+      "auroc": 0.9895833333333334
+    },
+    "calibration": {
+      "metrics": {
+        "threshold": 0.5,
+        "sample_count": 12,
+        "confusion_matrix": {
+          "tp": 6,
+          "tn": 5,
+          "fp": 1,
+          "fn": 0
+        },
+        "accuracy": 0.9166666666666666,
+        "balanced_accuracy": 0.9166666666666667,
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "specificity": 0.8333333333333334,
+        "f1": 0.923076923076923
+      },
+      "brier_score": 0.08756666666666667,
+      "auroc": 0.9583333333333334
+    },
+    "validation": {
+      "metrics": {
+        "threshold": 0.5,
+        "sample_count": 12,
+        "confusion_matrix": {
+          "tp": 6,
+          "tn": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "specificity": 1.0,
+        "f1": 1.0
+      },
+      "brier_score": 0.024408333333333334,
+      "auroc": 1.0
+    }
+  },
+  "calibration_selected_threshold": 0.5,
+  "selected_threshold_validation": {
+    "metrics": {
+      "threshold": 0.5,
+      "sample_count": 12,
+      "confusion_matrix": {
+        "tp": 6,
+        "tn": 6,
+        "fp": 0,
+        "fn": 0
+      },
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "specificity": 1.0,
+      "f1": 1.0
+    },
+    "brier_score": 0.024408333333333334,
+    "auroc": 1.0
+  },
+  "pair_ranking": {
+    "complete_pairs": 12,
+    "correctly_ranked": 12,
+    "mean_margin": 0.6758333333333333,
+    "minimum_margin": 0.16000000000000003
+  },
+  "observed_failure": {
+    "id": "c01-negative",
+    "kind": "deleted prohibition without explicit violation",
+    "expected": false,
+    "noul": 0.76,
+    "interpretation": "Single Noul evaluation can miss an omitted hard constraint even when paired ranking is correct."
+  },
+  "artifact_sha256": {
+    "protocol": "6a05c9ecce0bf68789e69ac8056a76a98d8bb92f2584bbd94d98a8cb7cde1fd2",
+    "dataset": "7e42c7cfc3153b6c950242400f518bc62c06d89081bf55a722effdac890c9dd4",
+    "tool": "8c503a0e627241a8bdc9b88b3e2fae2135b40882cf1d6e6587561edad90c1122",
+    "tests": "4c3badfaffc0a2334cf573fa885c291fb7828d2252ecde2ddd9eb6d9fcd04c6c",
+    "cases": "169798ad8179d166fd3b9b3fde80742023ed37f4da8e92f40c6f10bbd5101ebc",
+    "summary": "af91ccb62f1081bd320e65b228a93d4608405f36d413f219340c272b44251c15",
+    "report": "ae2f6abcf9bf246747a2807a10ec40c7a77aad575a9f58b441558b2d57aecaec"
+  },
+  "validation": {
+    "evaluation_tests_total": {
+      "count": 10,
+      "result": "passed"
+    },
+    "plugin_regression_tests": {
+      "count": 45,
+      "result": "passed"
+    },
+    "compileall": "passed",
+    "dataset_dry_run": {
+      "result": "passed",
+      "requests_sent": 0
+    },
+    "first_party_json": {
+      "count": 29,
+      "result": "all_parsed"
+    },
+    "first_party_jsonl": {
+      "count": 4,
+      "result": "all_lines_parsed"
+    },
+    "markdown_links": {
+      "checked": 41,
+      "broken": 0
+    },
+    "credential_hits_outside_local_runtime": 0,
+    "prompt_text_hits_in_v2_run_outputs": 0,
+    "v1_core_artifacts_unchanged": true,
+    "v1_shared_readme_append_expected": true,
+    "baseline_archive": {
+      "sha256": "a9c71a714566f64a653dcfe6c0dde534645872a1f5625747d918267638bec370",
+      "unchanged": true
+    },
+    "user_comfyui_port_8188_pid": 46220,
+    "user_comfyui_restarted": false
+  },
+  "limitations": [
+    "Twenty-four hand-authored paired cases are not a sample of real user traffic.",
+    "Calibration and validation are separate, but both were authored under the same protocol.",
+    "Only English and Chinese explicit prompt constraints in Noul mode are covered.",
+    "One provider model version and one run do not establish temporal stability.",
+    "The single observed omission failure is retained; labels and instructions were not changed and the API run was not repeated.",
+    "Hard constraints that can be enumerated should use deterministic or per-constraint checks in addition to aggregate semantic judgment."
+  ],
+  "credential_recorded": false
+}

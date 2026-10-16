@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-09-21T02:21:46.3554987+08:00",
+  "status": "design_only_no_plugin_runtime_test",
+  "reference_repository": "https://github.com/hndrr/ComfyUI-Jev",
+  "reference_commit": "12239dab9f03cd4c3dead4b043028ea602b8d43b",
+  "checks": {
+    "json_files_parsed": 4,
+    "mock_distribution_checks": true,
+    "question_snapshots_match": true,
+    "local_markdown_links_valid": true
+  },
+  "files": [
+    {
+      "path": "ACCEPTANCE.md",
+      "bytes": 6286,
+      "sha256": "378b235098a644cfcf159d24afb4b63b50167c4820e1a1c8a3524c5bffd0e748"
+    },
+    {
+      "path": "DESIGN.md",
+      "bytes": 24336,
+      "sha256": "dbeefd2d48dcef9b0719d130f2f584bf34310333bdf5946d263b18056ab48b39"
+    },
+    {
+      "path": "examples\\context-batch.json",
+      "bytes": 228,
+      "sha256": "1d007001969f81f4b9b806e837c266e6b1c7179ecb5e4ef621c55974a5082831"
+    },
+    {
+      "path": "examples\\context.json",
+      "bytes": 472,
+      "sha256": "48afa8798c9a5616d0f85f2f0c890e879795c4315474b56afe42125837f1aeda"
+    },
+    {
+      "path": "examples\\questions.json",
+      "bytes": 1222,
+      "sha256": "6f89501ff99602d3d6a3f9ad91e7ba6e9befdb35672f4603328bf5a9164ca8b3"
+    },
+    {
+      "path": "examples\\README.md",
+      "bytes": 956,
+      "sha256": "d74c160c5faa81e9afb4347bf275cb225398f52fbe183dc44481b62d0ba29980"
+    },
+    {
+      "path": "examples\\result.mock.json",
+      "bytes": 1936,
+      "sha256": "48400a1f071b89db92c909f31fddc2087b1519eb5f6abcf7174c0bcda78fb716"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1918,
+      "sha256": "b7b764f2483b393a6f3dd2a735a3e0a833da1cc8da8c44df5b142939b36f850a"
+    },
+    {
+      "path": "REPOSITORY-REVIEW.md",
+      "bytes": 9475,
+      "sha256": "73386c050012223eea867757f9131e70aece79deba19cb40ce9a3a74de285514"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "task_id": "SJ-P0-20260921-001",
+  "generated_at": "2026-09-21T09:28:36.7055647+08:00",
+  "status": "semantic_judge_p0_engineering_complete",
+  "environment": {
+    "comfyui_path": "E:\\comfyui\\ComfyUI-NAI",
+    "comfyui_version": "0.34.0",
+    "comfyui_commit": "3216c62e9962c3babd28a4dfea6e5aef50b8fe16",
+    "python": "3.12.10",
+    "comfy_api": "comfy_api.v0_0_2",
+    "aiohttp": "3.14.3",
+    "torch": "2.13.0+cpu"
+  },
+  "git": {
+    "repository_created": true,
+    "redesign_baseline_commit": "ecfe40b",
+    "implementation_commit": "aa8c173f244549d8fde0b74a1151fb7990e10530"
+  },
+  "installation": {
+    "source": "plugin/ComfyUI-Jev-Decision",
+    "custom_nodes_link": "E:\\comfyui\\ComfyUI-NAI\\custom_nodes\\ComfyUI-Jev-Decision",
+    "registered_node_ids": [
+      "JevSemanticJudge"
+    ]
+  },
+  "public_contract": {
+    "inputs": [
+      "context",
+      "instructions",
+      "mode",
+      "options",
+      "threshold",
+      "model",
+      "connection_profile",
+      "refresh"
+    ],
+    "modes": [
+      "Noul",
+      "Choice",
+      "Score"
+    ],
+    "outputs": [
+      "BOOLEAN decision",
+      "FLOAT value",
+      "INT index",
+      "STRING label",
+      "STRING details_json"
+    ]
+  },
+  "automated_checks": {
+    "unittest": {
+      "command": "$env:PYTHONPATH = 'E:\\comfyui\\ComfyUI-NAI'; python -m unittest discover -s tests -v",
+      "tests": 35,
+      "failures": 0,
+      "errors": 0,
+      "external_requests": 0
+    },
+    "compileall": "passed",
+    "first_party_json": {
+      "parsed": 15,
+      "errors": 0
+    },
+    "local_markdown_links": {
+      "checked": 28,
+      "broken": 0
+    },
+    "registration_probe": "REGISTERED=JevSemanticJudge",
+    "launcher_validate_only": {
+      "credential_configured": true,
+      "python_found": true,
+      "main_found": true,
+      "plugin_link_found": true,
+      "comfyui_started": false
+    },
+    "credential_scan": {
+      "credential_present": true,
+      "leaks_outside_env_file": 0
+    },
+    "baseline_archive": {
+      "sha256": "a9c71a714566f64a653dcfe6c0dde534645872a1f5625747d918267638bec370",
+      "hash_matches": true,
+      "read_only": true
+    },
+    "manifest": {
+      "files": 45,
+      "missing": 0,
+      "unlisted": 0,
+      "hash_mismatches": 0,
+      "credential_file_excluded": true,
+      "research_excluded": true,
+      "historical_manifests_excluded": true
+    }
+  },
+  "real_api_smoke": {
+    "provider": "typesafe",
+    "requested_model": "jev-latest",
+    "returned_model": "jev-1.13.0",
+    "request_count": 1,
+    "question_type": "noul",
+    "noul": 0.94,
+    "local_threshold": 0.5,
+    "local_boolean": true,
+    "usage": {
+      "input_tokens": 347,
+      "output_tokens": 20
+    },
+    "elapsed_ms": 992,
+    "response_fields": [
+      "answers",
+      "model",
+      "usage"
+    ],
+    "credential_recorded": false,
+    "semantic_accuracy_claim": false
+  },
+  "acceptance": {
+    "SJ01-SJ14": "passed",
+    "SJ15": "not_verified_no_browser_save_restore_run",
+    "SJ16": "partial_all_outputs_consumed_by_PreviewAny_and_easy_use_interfaces_source_checked",
+    "SJ17": "passed_one_noul_request_choice_and_score_not_live_tested",
+    "SJ18": "not_verified_requires_labeled_semantic_evaluation"
+  },
+  "interop_source_checks": [
+    "easy ifElse:boolean",
+    "easy compare:a_or_b",
+    "easy anythingIndexSwitch:index",
+    "easy showAnything:anything"
+  ],
+  "corrected_validation_invocations": [
+    "A full-suite attempt without PYTHONPATH failed during ComfyUI test collection; the documented command with PYTHONPATH then passed all 35 tests.",
+    "The first registration probe omitted await on comfy_entrypoint; the corrected probe registered only JevSemanticJudge.",
+    "A nonexistent portable Python path failed before the live smoke script started; the existing ComfyUI venv then made exactly one request."
+  ],
+  "known_limits": [
+    "Frontend workflow save and restore has not been exercised in a browser.",
+    "Community-node interoperability was source-checked, while the executor test used bundled PreviewAny sinks.",
+    "Choice and Score were validated with mocks but were not called against the paid API.",
+    "No labeled semantic accuracy or calibration evaluation has been run.",
+    "CPU executor validation does not include image sampling or GPU behavior."
+  ]
+}

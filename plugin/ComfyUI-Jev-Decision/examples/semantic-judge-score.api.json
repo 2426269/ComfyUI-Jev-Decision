@@ -1,0 +1,69 @@
+{
+  "0": {
+    "class_type": "PrimitiveStringMultiline",
+    "inputs": {
+      "value": "Two people performing a close-contact dance pose with crossed arms and overlapping legs."
+    }
+  },
+  "1": {
+    "class_type": "JevSemanticJudge",
+    "inputs": {
+      "context": [
+        "0",
+        0
+      ],
+      "instructions": "Rate the expected pose-generation difficulty caused by limb overlap and anatomical ambiguity.",
+      "mode": "Score",
+      "options": "simple | static pose with separated limbs\nmoderate | some interaction or partial overlap\ncomplex | severe overlap, occlusion or multi-person ambiguity",
+      "threshold": 0.7,
+      "model": "jev-latest",
+      "connection_profile": "default",
+      "refresh": 0
+    }
+  },
+  "2": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "1",
+        0
+      ]
+    }
+  },
+  "3": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "1",
+        1
+      ]
+    }
+  },
+  "4": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "1",
+        2
+      ]
+    }
+  },
+  "5": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "1",
+        3
+      ]
+    }
+  },
+  "6": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "1",
+        4
+      ]
+    }
+  }
+}

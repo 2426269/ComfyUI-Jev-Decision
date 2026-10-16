@@ -1,0 +1,69 @@
+{
+  "0": {
+    "class_type": "PrimitiveStringMultiline",
+    "inputs": {
+      "value": "A wide anime city scene with two characters, detailed architecture, rain and reflected neon light."
+    }
+  },
+  "1": {
+    "class_type": "JevSemanticJudge",
+    "inputs": {
+      "context": [
+        "0",
+        0
+      ],
+      "instructions": "Which generation model profile best matches the requested image? Judge only from the supplied descriptions.",
+      "mode": "Choice",
+      "options": "anima | anime characters and illustration\nkrea2 | complex natural-language scenes and realistic environments\nflux | text-heavy or general knowledge scenes",
+      "threshold": 0.75,
+      "model": "jev-latest",
+      "connection_profile": "default",
+      "refresh": 0
+    }
+  },
+  "2": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "1",
+        0
+      ]
+    }
+  },
+  "3": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "1",
+        1
+      ]
+    }
+  },
+  "4": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "1",
+        2
+      ]
+    }
+  },
+  "5": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "1",
+        3
+      ]
+    }
+  },
+  "6": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "1",
+        4
+      ]
+    }
+  }
+}

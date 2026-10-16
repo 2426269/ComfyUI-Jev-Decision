@@ -1,0 +1,158 @@
+{
+  "task_id": "SJ-P0.1-20260921-001",
+  "generated_at": "2026-09-21T19:20:56.5401383+08:00",
+  "status": "frontend_and_easy_use_interoperability_complete",
+  "git": {
+    "base_semantic_judge_commit": "aa8c173f244549d8fde0b74a1151fb7990e10530",
+    "interoperability_commit": "284474ac1d9f04c6c3a3d97238f8302a6277e2f1",
+    "context_socket_correction_commit": "cfc00217d3d218ab898e3e74189c9d3a6c2e92e3"
+  },
+  "runtime": {
+    "existing_instance": {
+      "url": "http://127.0.0.1:8188",
+      "pid": 46220,
+      "restarted": false,
+      "still_responding": true
+    },
+    "isolated_instance": {
+      "url": "http://127.0.0.1:8190",
+      "pid": 54620,
+      "cpu": true,
+      "stopped_after_validation": true,
+      "port_released": true
+    },
+    "object_info": {
+      "node_id": "JevSemanticJudge",
+      "context_type": "STRING",
+      "context_forceInput": true,
+      "outputs": [
+        "BOOLEAN",
+        "FLOAT",
+        "INT",
+        "STRING",
+        "STRING"
+      ]
+    },
+    "isolated_database_notice": "The second process could not acquire the default comfyui.db lock already held by the existing instance; node loading, object_info and frontend validation still completed."
+  },
+  "frontend_roundtrip": {
+    "tool": "Playwright CLI with installed Microsoft Edge",
+    "api_workflow": "plugin/ComfyUI-Jev-Decision/examples/semantic-judge-interop.api.json",
+    "ui_workflow": "plugin/ComfyUI-Jev-Decision/examples/semantic-judge-interop.workflow.json",
+    "screenshot": "output/playwright/semantic-judge-interop.png",
+    "node_count": 11,
+    "link_count": 14,
+    "context_socket": {
+      "name": "context",
+      "type": "STRING",
+      "linked": true
+    },
+    "preserved": {
+      "node_types": true,
+      "node_count": true,
+      "link_count": true,
+      "judge_widgets": true,
+      "judge_output_types": true,
+      "judge_output_link_counts": true
+    },
+    "accepted_difference_paths": [
+      "id",
+      "nodes.*.properties.ue_properties.version"
+    ],
+    "unexpected_differences": 0,
+    "semantic_judge_console_errors": 0,
+    "environment_console_notices": [
+      "missing optional user.css/userdata resources",
+      "community extension deprecation warnings"
+    ]
+  },
+  "interoperability": {
+    "consumers": [
+      {
+        "output": "BOOLEAN",
+        "class_type": "easy ifElse",
+        "input": "boolean"
+      },
+      {
+        "output": "FLOAT",
+        "class_type": "easy compare",
+        "input": "a"
+      },
+      {
+        "output": "INT",
+        "class_type": "easy anythingIndexSwitch",
+        "input": "index"
+      },
+      {
+        "output": "STRING label",
+        "class_type": "easy showAnything",
+        "input": "anything"
+      },
+      {
+        "output": "STRING details_json",
+        "class_type": "easy showAnything",
+        "input": "anything"
+      }
+    ],
+    "lazy_branch_counts": {
+      "selected": 1,
+      "unselected": 0
+    },
+    "actual_local_easy_use_classes": true,
+    "actual_prompt_executor": true
+  },
+  "automated_checks": {
+    "unittest": {
+      "tests": 36,
+      "failures": 0,
+      "errors": 0,
+      "external_requests": 0
+    },
+    "compileall": "passed",
+    "first_party_json": {
+      "parsed": 19,
+      "errors": 0
+    },
+    "markdown": {
+      "files": 15,
+      "local_links": 33,
+      "broken": 0
+    },
+    "exact_key_leaks_outside_env": 0,
+    "baseline_archive": {
+      "sha256": "a9c71a714566f64a653dcfe6c0dde534645872a1f5625747d918267638bec370",
+      "matches": true,
+      "read_only": true
+    },
+    "manifest": {
+      "files": 50,
+      "missing": 0,
+      "unlisted": 0,
+      "hash_mismatches": 0,
+      "credential_file_excluded": true,
+      "research_excluded": true,
+      "historical_manifests_excluded": true
+    }
+  },
+  "artifact_sha256": {
+    "interop_api": "eaae8b4d5a23cb64349be525544148c1de0fbcb5995fbbf1ce642df53c5014e2",
+    "interop_ui": "38f07743d55fdc31c9a78dd8da550dc89d90fea06114b359d4591b0d095dcda7",
+    "screenshot": "5ab84ebb61d83a6cb5a25d2137dfbe0cda22b632afa82b76ba108c1c87fdf333"
+  },
+  "api_usage": {
+    "typesafe_requests": 0,
+    "paid_credit_used": false
+  },
+  "acceptance": {
+    "SJ01": "passed_with_required_context_string_socket",
+    "SJ15": "passed_real_frontend_save_clear_reload",
+    "SJ16": "passed_actual_easy_use_classes_and_lazy_branch_execution",
+    "SJ17": "unchanged_previous_single_noul_smoke",
+    "SJ18": "not_verified_requires_labeled_semantic_evaluation"
+  },
+  "known_limits": [
+    "Choice and Score were validated with fake responses but were not called against the paid API.",
+    "No labeled semantic accuracy or calibration evaluation has been run.",
+    "The existing 8188 process predates the context-socket correction and needs a later normal restart or node reload before its live schema changes; it was intentionally not restarted during this task."
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "kind": "prompt_preservation_evaluation",
+  "run_id": "20260921T212008+0800",
+  "status": "complete",
+  "started_at": "2026-09-21T21:20:08.542260+08:00",
+  "finished_at": "2026-09-21T21:20:23.901575+08:00",
+  "dataset": {
+    "path": "evaluation/prompt-preservation-v1.jsonl",
+    "sha256": "2d10c8008c7c42b155ae60d04908ebef56b3712868cfa30bd56fe1221ad98009",
+    "total_cases": 18,
+    "requested_cases": 18,
+    "positive_cases": 3,
+    "negative_cases": 15
+  },
+  "protocol": {
+    "mode": "Noul",
+    "instructions": "Decide whether candidate preserves every explicit requirement in original, including subjects, counts, attributes, actions, setting, time, composition, visual style, and prohibitions. Rewording and compatible added detail are allowed only when no requirement is removed, contradicted, weakened, or changed. Return true only when all explicit requirements are preserved.",
+    "instructions_sha256": "b6710d8575778acfc6a36559ca73b118d71c93e540995eb89ea97f03c91709cc",
+    "primary_threshold": 0.5,
+    "exploratory_thresholds": [
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9
+    ],
+    "automatic_retries": 0
+  },
+  "requested_model": "jev-latest",
+  "returned_models": {
+    "jev-1.13.0": 18
+  },
+  "request_attempts": 18,
+  "successful_responses": 18,
+  "failed_responses": 0,
+  "usage_totals": {
+    "input_tokens": 7054,
+    "output_tokens": 360
+  },
+  "elapsed_ms_total": 15329,
+  "brier_score": 0.0013388888888888895,
+  "threshold_metrics": [
+    {
+      "threshold": 0.5,
+      "sample_count": 18,
+      "confusion_matrix": {
+        "tp": 3,
+        "tn": 15,
+        "fp": 0,
+        "fn": 0
+      },
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "specificity": 1.0,
+      "f1": 1.0
+    },
+    {
+      "threshold": 0.6,
+      "sample_count": 18,
+      "confusion_matrix": {
+        "tp": 3,
+        "tn": 15,
+        "fp": 0,
+        "fn": 0
+      },
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "specificity": 1.0,
+      "f1": 1.0
+    },
+    {
+      "threshold": 0.7,
+      "sample_count": 18,
+      "confusion_matrix": {
+        "tp": 3,
+        "tn": 15,
+        "fp": 0,
+        "fn": 0
+      },
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "specificity": 1.0,
+      "f1": 1.0
+    },
+    {
+      "threshold": 0.8,
+      "sample_count": 18,
+      "confusion_matrix": {
+        "tp": 3,
+        "tn": 15,
+        "fp": 0,
+        "fn": 0
+      },
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "specificity": 1.0,
+      "f1": 1.0
+    },
+    {
+      "threshold": 0.9,
+      "sample_count": 18,
+      "confusion_matrix": {
+        "tp": 3,
+        "tn": 15,
+        "fp": 0,
+        "fn": 0
+      },
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "specificity": 1.0,
+      "f1": 1.0
+    }
+  ],
+  "best_observed_threshold": {
+    "threshold": 0.5,
+    "balanced_accuracy": 1.0,
+    "selection_note": "Exploratory on this 18-case dataset; ties prefer the first, lower threshold."
+  },
+  "category_results_at_primary_threshold": {
+    "preserved": {
+      "sample_count": 3,
+      "accuracy_at_primary_threshold": 1.0,
+      "mean_noul": 0.96,
+      "min_noul": 0.96,
+      "max_noul": 0.96
+    },
+    "deletion": {
+      "sample_count": 3,
+      "accuracy_at_primary_threshold": 1.0,
+      "mean_noul": 0.06333333333333334,
+      "min_noul": 0.03,
+      "max_noul": 0.1
+    },
+    "contradiction": {
+      "sample_count": 3,
+      "accuracy_at_primary_threshold": 1.0,
+      "mean_noul": 0.013333333333333334,
+      "min_noul": 0.01,
+      "max_noul": 0.02
+    },
+    "count_change": {
+      "sample_count": 3,
+      "accuracy_at_primary_threshold": 1.0,
+      "mean_noul": 0.01,
+      "min_noul": 0.01,
+      "max_noul": 0.01
+    },
+    "prohibition_dropped": {
+      "sample_count": 3,
+      "accuracy_at_primary_threshold": 1.0,
+      "mean_noul": 0.023333333333333334,
+      "min_noul": 0.01,
+      "max_noul": 0.04
+    },
+    "style_change": {
+      "sample_count": 3,
+      "accuracy_at_primary_threshold": 1.0,
+      "mean_noul": 0.02,
+      "min_noul": 0.01,
+      "max_noul": 0.04
+    }
+  },
+  "errors_at_primary_threshold": [],
+  "stop_error": null,
+  "limitations": [
+    "Small hand-authored dataset; results do not estimate general prompt-distribution accuracy.",
+    "Class distribution is 3 positive and 15 negative cases.",
+    "English explicit prompts and Noul mode only.",
+    "Exploratory thresholds are evaluated on the same cases and are not production calibration."
+  ]
+}

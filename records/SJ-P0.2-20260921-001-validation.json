@@ -1,0 +1,174 @@
+{
+  "task_id": "SJ-P0.2-20260921-001",
+  "generated_at": "2026-09-21T20:23:54.7056014+08:00",
+  "status": "multitype_context_engineering_complete",
+  "git": {
+    "implementation_commit": "a7e160f723090f4f07ebf60702e594b4b6f965f6",
+    "base_p0_1_commit": "0ccac04"
+  },
+  "public_contract": {
+    "node_id": "JevSemanticJudge",
+    "context_socket": "STRING,DICT,ARRAY,BOOLEAN,INT,FLOAT",
+    "input_count": 8,
+    "outputs": [
+      "BOOLEAN decision",
+      "FLOAT value",
+      "INT index",
+      "STRING label",
+      "STRING details_json"
+    ],
+    "unlimited_any": false,
+    "additional_public_nodes": 0
+  },
+  "normalization": {
+    "STRING": "trimmed nonempty text; P0 fingerprint preserved",
+    "DICT": "nonempty deep-copied finite JSON object with string keys; sent as native object",
+    "ARRAY": "nonempty deep-copied finite JSON array; sent as native array",
+    "BOOLEAN": "wrapped as object with value field",
+    "INT": "wrapped as object with value field",
+    "FLOAT": "finite value wrapped as object with value field",
+    "rejected": [
+      "top-level null",
+      "empty string/object/array",
+      "non-string object keys",
+      "NaN/Infinity",
+      "cyclic containers",
+      "tuple",
+      "custom Python object",
+      "tensor/resource object"
+    ]
+  },
+  "automated_checks": {
+    "unittest": {
+      "tests": 45,
+      "failures": 0,
+      "errors": 0,
+      "external_requests": 0
+    },
+    "prompt_executor": {
+      "string": true,
+      "dict": true,
+      "array": true,
+      "bundled_boolean": true,
+      "native_provider_state": true
+    },
+    "invalid_context_provider_calls": 0,
+    "compileall": "passed",
+    "first_party_json": {
+      "parsed": 23,
+      "errors": 0,
+      "isolated_runtime_state_excluded": true
+    },
+    "markdown": {
+      "files": 15,
+      "local_links": 36,
+      "broken": 0
+    },
+    "exact_key_leaks_outside_env": 0,
+    "baseline_archive": {
+      "sha256": "a9c71a714566f64a653dcfe6c0dde534645872a1f5625747d918267638bec370",
+      "matches": true,
+      "read_only": true
+    },
+    "manifest": {
+      "files": 55,
+      "missing": 0,
+      "unlisted": 0,
+      "hash_mismatches": 0,
+      "credential_file_excluded": true,
+      "research_excluded": true,
+      "isolated_runtime_excluded": true,
+      "historical_manifests_excluded": true
+    }
+  },
+  "frontend": {
+    "runtime_object_info_context": "STRING,DICT,ARRAY,BOOLEAN,INT,FLOAT",
+    "multitype_roundtrip": {
+      "nodes": 7,
+      "links": 6,
+      "source": "PrimitiveBoolean",
+      "source_value": false,
+      "context_link_preserved": true,
+      "widgets_preserved": true,
+      "unexpected_differences": 0
+    },
+    "string_compatibility_roundtrip": {
+      "nodes": 11,
+      "links": 14,
+      "source": "PrimitiveStringMultiline",
+      "context_link_preserved": true,
+      "output_types_and_links_preserved": true,
+      "unexpected_differences": 0
+    },
+    "accepted_frontend_rewrites": [
+      "workflow id",
+      "nodes.*.properties.ue_properties.version"
+    ],
+    "semantic_judge_console_errors": 0,
+    "environment_notices": [
+      "optional userdata/user.css 404",
+      "existing community extension deprecation warnings"
+    ]
+  },
+  "runtime_boundary": {
+    "isolated_instances": [
+      {
+        "port": 8190,
+        "pid": 54516,
+        "database": "sqlite memory",
+        "user_directory": "isolated",
+        "stopped": true
+      },
+      {
+        "port": 8190,
+        "pid": 58364,
+        "database": "sqlite memory",
+        "user_directory": "isolated",
+        "stopped": true
+      }
+    ],
+    "port_8190_released": true,
+    "existing_instance": {
+      "port": 8188,
+      "pid": 46220,
+      "restarted": false,
+      "still_responding": true
+    }
+  },
+  "artifacts": {
+    "multitype_api": {
+      "path": "plugin/ComfyUI-Jev-Decision/examples/semantic-judge-multitype.api.json",
+      "sha256": "357b916a7c85d9415e41013aedd3c70d363bb3c09ff641afa67cd39e0efa8496"
+    },
+    "multitype_ui": {
+      "path": "plugin/ComfyUI-Jev-Decision/examples/semantic-judge-multitype.workflow.json",
+      "sha256": "56ca8f177a016b6c849d7d98f00caf4f9bc2dc9aa8ad8830df7352006b01f4e7"
+    },
+    "string_interop_ui": {
+      "path": "plugin/ComfyUI-Jev-Decision/examples/semantic-judge-interop.workflow.json",
+      "sha256": "1b7e69791ed6bc760aa5c1ce5e16f6330b77be89728a4cf6e05442e9c300a6bf"
+    },
+    "screenshot": {
+      "path": "output/playwright/semantic-judge-multitype.png",
+      "sha256": "7e7cae793c6d6fceafa0b43833356655da073d561a81ceabc66be70ba36aead3"
+    }
+  },
+  "api_usage": {
+    "typesafe_requests": 0,
+    "paid_credit_used": false,
+    "structured_state_live_smoke": false
+  },
+  "acceptance": {
+    "SJ19": "passed",
+    "SJ20": "passed",
+    "SJ21": "passed",
+    "SJ22": "passed",
+    "SJ18": "not_verified_requires_labeled_semantic_evaluation"
+  },
+  "known_limits": [
+    "The running 8188 process predates P0.2 and needs a later normal restart or node reload before it exposes the multitype schema.",
+    "No paid TypeSafe request was repeated for structured state; provider payload behavior is covered by fake-boundary tests.",
+    "IMAGE, LATENT, MODEL, VAE and tensors require explicit upstream description or JSON metadata extraction.",
+    "No labeled semantic accuracy or calibration evaluation has been run."
+  ]
+}

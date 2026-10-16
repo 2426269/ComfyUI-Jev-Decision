@@ -1,0 +1,15 @@
+local-runtime/.env.local
+research/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.log
+.playwright-cli/
+local-runtime/isolated-*/
+
+# Public development snapshot excludes private runtime folders and archived binaries.
+local-runtime/sj25-isolated/
+records/artifacts/*.zip
+*.pem
+*.key

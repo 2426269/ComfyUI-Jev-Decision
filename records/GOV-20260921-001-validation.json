@@ -1,0 +1,24 @@
+{
+  "task_id": "GOV-20260921-001",
+  "verified_at": "2026-09-21T02:27:20.7255899+08:00",
+  "status": "passed_document_checks_only",
+  "working_directory": "E:\\comfyui\\Jev-Decision-Design",
+  "checks": {
+    "documented_read_commands": "executed",
+    "example_json_parse_count": 4,
+    "question_snapshots_match": true,
+    "local_markdown_links_checked": 27,
+    "unchanged_design_and_examples_match_baseline": true,
+    "reference_commit": "12239dab9f03cd4c3dead4b043028ea602b8d43b",
+    "reference_worktree_clean": true,
+    "baseline_manifest_preserved": true
+  },
+  "method": "PowerShell ConvertFrom-Json, relative Markdown link existence, Get-FileHash, git rev-parse and status",
+  "not_run": [
+    "plugin implementation",
+    "ComfyUI runtime tests",
+    "third-party test suite",
+    "paid model calls",
+    "GPU sampling"
+  ]
+}

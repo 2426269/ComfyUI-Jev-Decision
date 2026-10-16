@@ -1,0 +1,27 @@
+{
+  "task_id": "REDESIGN-20260921-001",
+  "created_at": "2026-09-21T08:54:24.6748800+08:00",
+  "purpose": "Freeze the validated P0 Noul vertical slice before redesigning the public node contract.",
+  "archive": "records/artifacts/ComfyUI-Jev-Decision-P0-baseline-20260921T0854+0800.zip",
+  "bytes": 67823,
+  "sha256": "a9c71a714566f64a653dcfe6c0dde534645872a1f5625747d918267638bec370",
+  "entries": 35,
+  "read_only": true,
+  "excluded": [
+    "local-runtime/.env.local",
+    "research/**",
+    "records/artifacts/**",
+    "records/manifest-*",
+    "**/__pycache__/**",
+    "**/*.pyc"
+  ],
+  "contains_credential_file": false,
+  "contains_research_copy": false,
+  "validated_baseline": {
+    "automated_tests": 24,
+    "real_api_requests": 1,
+    "real_api_mode": "noul",
+    "returned_model": "jev-1.13.0",
+    "validation_record": "records/P0-20260921-001-validation.json"
+  }
+}

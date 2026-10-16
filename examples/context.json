@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "kind": "context",
+  "data": {
+    "original": "Two adult women talking on a rainy street at night, anime style, wide shot, no umbrellas.",
+    "rewritten": "Anime-style wide shot of two adult women talking on a rainy street at night, without umbrellas, with gentle reflections on the wet pavement.",
+    "requirements": "Preserve subjects, count, activity, style, composition and explicit exclusions. Minor lighting details are allowed."
+  }
+}

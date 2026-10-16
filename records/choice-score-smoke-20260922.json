@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "kind": "choice_score_real_smoke",
+  "started_at": "2026-09-22T02:23:08.035104+08:00",
+  "requested_model": "jev-latest",
+  "automatic_retries": 0,
+  "results": [
+    {
+      "mode": "Choice",
+      "provider_ok": true,
+      "elapsed_ms": 859,
+      "raw_contract": {
+        "response_type": "object",
+        "response_sha256": "90fc5f2c53705a942c0f045f0912cffa72af943da51550273536f4662700b6eb",
+        "top_level_fields": [
+          "answers",
+          "model",
+          "usage"
+        ],
+        "unknown_top_level_fields": [],
+        "answers_fields": [
+          "decision"
+        ],
+        "unknown_answers_fields": [],
+        "answer_fields": [
+          "choice",
+          "confidence",
+          "probabilities",
+          "type"
+        ],
+        "unknown_answer_fields": [],
+        "known_answer": {
+          "choice": "portrait",
+          "confidence": 1.0,
+          "probabilities": {
+            "environment": 0.0,
+            "portrait": 1.0
+          },
+          "type": "choice"
+        },
+        "returned_model": "jev-1.13.0",
+        "usage": {
+          "input_tokens": 347,
+          "output_tokens": 31
+        }
+      },
+      "strict_validation": {
+        "ok": true
+      },
+      "mapped_outputs": {
+        "boolean": true,
+        "float": 1.0,
+        "int": 0,
+        "string": "portrait"
+      }
+    },
+    {
+      "mode": "Score",
+      "provider_ok": true,
+      "elapsed_ms": 826,
+      "raw_contract": {
+        "response_type": "object",
+        "response_sha256": "b2a1b4b699c860da8eaf9f2488a3b82f0644f510edeb4dc8dbcc7c6ba24e4a7d",
+        "top_level_fields": [
+          "answers",
+          "model",
+          "usage"
+        ],
+        "unknown_top_level_fields": [],
+        "answers_fields": [
+          "decision"
+        ],
+        "unknown_answers_fields": [],
+        "answer_fields": [
+          "confidence",
+          "legend",
+          "probabilities",
+          "score",
+          "type"
+        ],
+        "unknown_answer_fields": [],
+        "known_answer": {
+          "confidence": 1.0,
+          "legend": {
+            "0": "one static subject with little overlap",
+            "1": "multiple elements with some interaction",
+            "2": "strong overlap, motion, or multi-subject interaction"
+          },
+          "probabilities": {
+            "0": 0.0,
+            "1": 0.0,
+            "2": 1.0
+          },
+          "score": 2.0,
+          "type": "score"
+        },
+        "returned_model": "jev-1.13.0",
+        "usage": {
+          "input_tokens": 333,
+          "output_tokens": 17
+        }
+      },
+      "strict_validation": {
+        "ok": true
+      },
+      "mapped_outputs": {
+        "boolean": true,
+        "float": 1.0,
+        "int": 2,
+        "string": "complex"
+      }
+    }
+  ],
+  "finished_at": "2026-09-22T02:23:09.726925+08:00",
+  "request_attempts": 2,
+  "complete": true
+}

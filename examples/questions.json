@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "kind": "questions",
+  "questions": {
+    "preserves_meaning": {
+      "type": "noul",
+      "instructions": "Does rewritten preserve the subjects, count, activity, style, composition and explicit exclusions in original, under requirements?"
+    },
+    "route": {
+      "type": "choice",
+      "instructions": "Which treatment is appropriate for rewritten compared with original under requirements? Judge directly from these fields.",
+      "criteria": {
+        "accept": "The rewrite preserves the required meaning and only makes allowed changes.",
+        "keep_original": "The rewrite changes required meaning or violates an explicit restriction.",
+        "review": "The supplied information does not establish whether the changes are allowed."
+      }
+    },
+    "wording_change": {
+      "type": "score",
+      "instructions": "How much has the wording changed between original and rewritten? Judge wording rather than semantic correctness.",
+      "criteria": [
+        "Identical wording apart from punctuation.",
+        "Small local wording changes.",
+        "Substantial rephrasing while recognizable phrases remain.",
+        "Nearly all wording is different."
+      ]
+    }
+  }
+}

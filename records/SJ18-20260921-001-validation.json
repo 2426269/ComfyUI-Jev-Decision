@@ -1,0 +1,116 @@
+{
+  "task_id": "SJ18-20260921-001",
+  "status": "completed",
+  "recorded_at": "2026-09-21T21:23:56.806175+08:00",
+  "implementation_commit": "fbe9802b21a57a5dba7e4a9ffead8474d8059814",
+  "scope": "Prompt-preservation semantic feasibility evaluation using fixed Noul instructions and a labeled v1 dataset.",
+  "dataset": {
+    "path": "evaluation/prompt-preservation-v1.jsonl",
+    "sha256": "2d10c8008c7c42b155ae60d04908ebef56b3712868cfa30bd56fe1221ad98009",
+    "sample_count": 18,
+    "class_counts": {
+      "positive": 3,
+      "negative": 15
+    },
+    "category_counts": {
+      "preserved": 3,
+      "deletion": 3,
+      "contradiction": 3,
+      "count_change": 3,
+      "prohibition_dropped": 3,
+      "style_change": 3
+    }
+  },
+  "real_api_run": {
+    "run_id": "20260921T212008+0800",
+    "status": "complete",
+    "request_attempts": 18,
+    "successful_responses": 18,
+    "failed_responses": 0,
+    "automatic_retries": 0,
+    "requested_model": "jev-latest",
+    "returned_models": {
+      "jev-1.13.0": 18
+    },
+    "usage_totals": {
+      "input_tokens": 7054,
+      "output_tokens": 360
+    },
+    "elapsed_ms_total": 15329
+  },
+  "metrics": {
+    "primary_threshold": 0.5,
+    "primary_confusion_matrix": {
+      "tp": 3,
+      "tn": 15,
+      "fp": 0,
+      "fn": 0
+    },
+    "primary_accuracy": 1.0,
+    "primary_balanced_accuracy": 1.0,
+    "brier_score": 0.0013388888888888895,
+    "thresholds_checked": [
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9
+    ],
+    "errors_at_primary_threshold": []
+  },
+  "artifact_sha256": {
+    "evaluation_readme": "27e68a79940d590fab36f07cdc8177c0a10cec2e6f1ea59ad8f87280abc5b4e8",
+    "dataset": "2d10c8008c7c42b155ae60d04908ebef56b3712868cfa30bd56fe1221ad98009",
+    "tool": "de315932175bf406c31518dbfb8204e76bb50b18f6685a1992034940e1475e03",
+    "cases": "0f0566fd4c8886278eb8c10549fc8a3564f6e2e8f7672578347388906ea30138",
+    "summary": "42673e9bc8164a6e1b3ddd460465c4e365316eaacb7d39e6528b8a92c30cd1df",
+    "report": "b4fe47433871cc53e090bb009fcba68b5ad9394bee4cf2a14183093285a069bb"
+  },
+  "validation": {
+    "evaluation_unit_tests": {
+      "count": 5,
+      "result": "passed"
+    },
+    "plugin_regression_tests": {
+      "count": 45,
+      "result": "passed"
+    },
+    "compileall": "passed",
+    "dataset_dry_run": {
+      "result": "passed",
+      "requests_sent": 0
+    },
+    "first_party_json": {
+      "count": 26,
+      "result": "all_parsed"
+    },
+    "first_party_jsonl": {
+      "count": 2,
+      "result": "all_lines_parsed"
+    },
+    "markdown_links": {
+      "checked": 37,
+      "broken": 0
+    },
+    "credential_configured": true,
+    "credential_hits_outside_local_runtime": 0,
+    "prompt_text_hits_in_run_outputs": 0,
+    "baseline_archive": {
+      "sha256": "a9c71a714566f64a653dcfe6c0dde534645872a1f5625747d918267638bec370",
+      "unchanged": true
+    },
+    "target_junction": "E:/comfyui/Jev-Decision-Design/plugin/ComfyUI-Jev-Decision",
+    "user_comfyui_port_8188_pid": 46220,
+    "user_comfyui_restarted": false
+  },
+  "interpretation": "Basic feasibility passed on an explicit hand-authored English diagnostic set.",
+  "limitations": [
+    "Small hand-authored dataset; results do not estimate general prompt-distribution accuracy.",
+    "Class distribution is 3 positive and 15 negative cases.",
+    "English explicit prompts and Noul mode only.",
+    "Exploratory thresholds are evaluated on the same cases and are not production calibration.",
+    "No second paid run was made after observing results.",
+    "The running 8188 ComfyUI process was not restarted or used for paid evaluation."
+  ],
+  "credential_recorded": false
+}

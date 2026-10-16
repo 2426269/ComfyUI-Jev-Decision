@@ -1,0 +1,12 @@
+[project]
+name = "comfyui-jev-decision"
+version = "0.1.0"
+description = "A single semantic judgment node for ComfyUI using TypeSafe Jev"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["aiohttp>=3.11.8"]
+
+[tool.comfy]
+PublisherId = "local-development"
+DisplayName = "Jev Decision"
+requires-comfyui = ">=0.34.0"

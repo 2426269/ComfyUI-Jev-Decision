@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "kind": "context_batch",
+  "items": [
+    {"item_id": "text_a", "index": 0, "data": {"text": "A short request."}},
+    {"item_id": "text_b", "index": 1, "data": {"text": "A different request."}}
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "0": {
+    "class_type": "PrimitiveBoolean",
+    "inputs": {
+      "value": false
+    }
+  },
+  "1": {
+    "class_type": "JevSemanticJudge",
+    "inputs": {
+      "context": [
+        "0",
+        0
+      ],
+      "instructions": "Does the supplied feature state indicate that the feature is enabled?",
+      "mode": "Noul",
+      "options": "",
+      "threshold": 0.8,
+      "model": "jev-latest",
+      "connection_profile": "default",
+      "refresh": 0
+    }
+  },
+  "2": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "1",
+        0
+      ]
+    }
+  },
+  "3": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "1",
+        1
+      ]
+    }
+  },
+  "4": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "1",
+        2
+      ]
+    }
+  },
+  "5": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "1",
+        3
+      ]
+    }
+  },
+  "6": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "1",
+        4
+      ]
+    }
+  }
+}

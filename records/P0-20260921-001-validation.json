@@ -1,0 +1,79 @@
+{
+  "task_id": "P0-20260921-001",
+  "generated_at": "2026-09-21T02:51:54.1696151+08:00",
+  "status": "noul_vertical_slice_completed",
+  "environment": {
+    "comfyui_path": "E:\\comfyui\\ComfyUI-NAI",
+    "comfyui_version": "0.34.0",
+    "comfyui_commit": "3216c62e9962c3babd28a4dfea6e5aef50b8fe16",
+    "python": "3.12.10",
+    "comfy_api": "comfy_api.v0_0_2",
+    "aiohttp": "3.14.3",
+    "torch": "2.13.0+cpu"
+  },
+  "installation": {
+    "source": "plugin/ComfyUI-Jev-Decision",
+    "custom_nodes_link": "E:\\comfyui\\ComfyUI-NAI\\custom_nodes\\ComfyUI-Jev-Decision",
+    "registered_node_ids": [
+      "JevDecisionAskNoul",
+      "JevDecisionEvaluateText",
+      "JevDecisionReadNoul",
+      "JevDecisionInspectResult"
+    ]
+  },
+  "automated_checks": {
+    "unittest": {
+      "command": "python -m unittest discover -s tests -v",
+      "tests": 24,
+      "failures": 0,
+      "errors": 0,
+      "external_requests": 0
+    },
+    "compile_and_json": "passed",
+    "local_markdown_links": {
+      "checked": 30,
+      "broken": 0
+    },
+    "launcher_validate_only": {
+      "credential_configured": true,
+      "python_found": true,
+      "main_found": true,
+      "plugin_link_found": true,
+      "comfyui_started": false,
+      "external_requests": 0
+    },
+    "credential_scan": {
+      "credential_present": true,
+      "leaks_outside_env_file": 0
+    }
+  },
+  "real_api_smoke": {
+    "provider": "typesafe",
+    "requested_model": "jev-latest",
+    "returned_model": "jev-1.13.0",
+    "request_count": 1,
+    "question_type": "noul",
+    "question_id": "preserves_requirements",
+    "noul": 0.93,
+    "local_threshold": 0.5,
+    "local_boolean": true,
+    "usage": {
+      "input_tokens": 400,
+      "output_tokens": 25
+    },
+    "elapsed_ms": 1107,
+    "response_fields": [
+      "answers",
+      "model",
+      "usage"
+    ],
+    "credential_recorded": false,
+    "semantic_accuracy_claim": false
+  },
+  "known_limits": [
+    "Context, Choice, Score, Range Classify, Lazy Select and batch are not implemented.",
+    "The real smoke is one connectivity and contract sample, not an accuracy or calibration benchmark.",
+    "CPU executor validation does not include image sampling or GPU behavior.",
+    "ruff was unavailable in the local environment and was not run."
+  ]
+}

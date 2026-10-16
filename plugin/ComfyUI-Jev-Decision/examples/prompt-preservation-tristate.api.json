@@ -1,0 +1,189 @@
+{
+  "0": {
+    "class_type": "PrimitiveStringMultiline",
+    "inputs": {
+      "value": "original prompt"
+    }
+  },
+  "1": {
+    "class_type": "PrimitiveStringMultiline",
+    "inputs": {
+      "value": "candidate prompt"
+    }
+  },
+  "2": {
+    "class_type": "StringConcatenate",
+    "inputs": {
+      "string_a": [
+        "0",
+        0
+      ],
+      "string_b": [
+        "1",
+        0
+      ],
+      "delimiter": "\n\n<<<JEV_CONTEXT_BOUNDARY_V1: ORIGINAL ABOVE / CANDIDATE BELOW>>>\n\n"
+    }
+  },
+  "3": {
+    "class_type": "JevSemanticJudge",
+    "inputs": {
+      "context": [
+        "2",
+        0
+      ],
+      "instructions": "The text before the boundary is the original prompt and the text after it is the candidate. First enumerate every explicit subject, count, attribute, relation, scene, composition, style, and prohibition in the original. Then judge whether the candidate preserves every item without contradiction or omission. Return the probability that all requirements are preserved.",
+      "mode": "Noul",
+      "options": "",
+      "threshold": 0.8,
+      "model": "jev-1.13.0",
+      "connection_profile": "default",
+      "refresh": 0
+    }
+  },
+  "4": {
+    "class_type": "easy float",
+    "inputs": {
+      "value": 0.5
+    }
+  },
+  "5": {
+    "class_type": "easy float",
+    "inputs": {
+      "value": 0.8
+    }
+  },
+  "6": {
+    "class_type": "easy compare",
+    "inputs": {
+      "a": [
+        "3",
+        1
+      ],
+      "b": [
+        "4",
+        0
+      ],
+      "comparison": "a >= b"
+    }
+  },
+  "7": {
+    "class_type": "easy compare",
+    "inputs": {
+      "a": [
+        "3",
+        1
+      ],
+      "b": [
+        "5",
+        0
+      ],
+      "comparison": "a >= b"
+    }
+  },
+  "8": {
+    "class_type": "PrimitiveStringMultiline",
+    "inputs": {
+      "value": "adopt"
+    }
+  },
+  "9": {
+    "class_type": "PrimitiveStringMultiline",
+    "inputs": {
+      "value": "review"
+    }
+  },
+  "10": {
+    "class_type": "PrimitiveStringMultiline",
+    "inputs": {
+      "value": "reject"
+    }
+  },
+  "11": {
+    "class_type": "easy ifElse",
+    "inputs": {
+      "boolean": [
+        "6",
+        0
+      ],
+      "on_true": [
+        "9",
+        0
+      ],
+      "on_false": [
+        "10",
+        0
+      ]
+    }
+  },
+  "12": {
+    "class_type": "easy ifElse",
+    "inputs": {
+      "boolean": [
+        "7",
+        0
+      ],
+      "on_true": [
+        "8",
+        0
+      ],
+      "on_false": [
+        "11",
+        0
+      ]
+    }
+  },
+  "13": {
+    "class_type": "easy ifElse",
+    "inputs": {
+      "boolean": [
+        "7",
+        0
+      ],
+      "on_true": [
+        "1",
+        0
+      ],
+      "on_false": [
+        "0",
+        0
+      ]
+    }
+  },
+  "14": {
+    "class_type": "easy showAnything",
+    "inputs": {
+      "anything": [
+        "12",
+        0
+      ]
+    }
+  },
+  "15": {
+    "class_type": "easy showAnything",
+    "inputs": {
+      "anything": [
+        "13",
+        0
+      ]
+    }
+  },
+  "16": {
+    "class_type": "easy showAnything",
+    "inputs": {
+      "anything": [
+        "3",
+        1
+      ]
+    }
+  },
+  "17": {
+    "class_type": "easy showAnything",
+    "inputs": {
+      "anything": [
+        "3",
+        4
+      ]
+    }
+  }
+}

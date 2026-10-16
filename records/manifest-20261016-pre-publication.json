@@ -1,0 +1,378 @@
+{
+  "generated_at": "2026-09-21T21:39:15.412245+08:00",
+  "status": "sj18_v2_paired_evaluation_complete",
+  "task_id": "SJ18-V2-20260921-001",
+  "evidence": "records/SJ18-V2-20260921-001-validation.json",
+  "baseline_archive": "records/artifacts/ComfyUI-Jev-Decision-P0-baseline-20260921T0854+0800.zip",
+  "previous_manifest": "records/manifest-20260921-sj18-v1.json",
+  "implementation_commit": "e57772636b0a75bba7a647ad5fcbee3f144b1e94",
+  "exclusions": [
+    "manifest.json",
+    "records/manifest-*",
+    "research/**",
+    ".git/**",
+    ".playwright-cli/**",
+    "local-runtime/.env.local",
+    "local-runtime/isolated-*/**",
+    "**/__pycache__/**",
+    "**/*.pyc",
+    "**/*.log"
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 32,
+      "sha256": "74f066599d3fe2817756c3e532a869d370d4294c5c0a188487da2855f9b2378e"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 138,
+      "sha256": "8830a5834381620c014cbbcff67f760acb7cb7d932f394e0fa65ba82cb0b375e"
+    },
+    {
+      "path": "ACCEPTANCE.md",
+      "bytes": 7996,
+      "sha256": "032ee033bffe7f1357600cffca596c26a7d35a3587ff9e8e0f8a7c54988df276"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 10486,
+      "sha256": "1b7b65cebe6f93b1bc09607378c2e437835b6a985721b7429c03b6f5f12a331b"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 5259,
+      "sha256": "8ce2ed7a87287c85ef8e77b21b0c0af4ff800410e649b1112c54bbb0ffc70129"
+    },
+    {
+      "path": "DESIGN.md",
+      "bytes": 13232,
+      "sha256": "e52fb75e118bb657b8190f4fda3c0b587d4b714e220019060052da82deb483e9"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6013,
+      "sha256": "e17f69994383bc770661fb0625de611edf5b75e9c3af58a2b43d67f32c183901"
+    },
+    {
+      "path": "REPOSITORY-REVIEW.md",
+      "bytes": 9475,
+      "sha256": "73386c050012223eea867757f9131e70aece79deba19cb40ce9a3a74de285514"
+    },
+    {
+      "path": "STATUS.md",
+      "bytes": 5720,
+      "sha256": "3aca9881f8b85c74eae30575a31d44f638388a1f4de183aa88eb8e9b3a005eb9"
+    },
+    {
+      "path": "TASK_LOG.md",
+      "bytes": 35294,
+      "sha256": "c515f7fa74110e30d078e17d5f8ef3a4106dad3cd061eb26ee5d846d2d744aee"
+    },
+    {
+      "path": "docs/plans/2026-09-21-semantic-judge-redesign.md",
+      "bytes": 4529,
+      "sha256": "cee2378ba59568ee7ce4364b6aa0eea5651a6f62f220ebedb2f699b33f8a7fbb"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-09-21-p0-noul-vertical-slice.md",
+      "bytes": 9361,
+      "sha256": "665fd927dc7b94e2a104458c2069562492394aa3fedde200bb53e4b1c89f5640"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-09-21-semantic-judge-rewrite.md",
+      "bytes": 6294,
+      "sha256": "cd128adb783537175e0336dcd0b8668a3c40856f3d8ff21b1839be3e14ee33c5"
+    },
+    {
+      "path": "evaluation/README.md",
+      "bytes": 3943,
+      "sha256": "5036a45f3ebd309cb27b300b1245c6fcc8185e43f94f7fa420c8a853534729b5"
+    },
+    {
+      "path": "evaluation/V2-PROTOCOL.md",
+      "bytes": 3454,
+      "sha256": "6a05c9ecce0bf68789e69ac8056a76a98d8bb92f2584bbd94d98a8cb7cde1fd2"
+    },
+    {
+      "path": "evaluation/prompt-preservation-v1.jsonl",
+      "bytes": 6706,
+      "sha256": "2d10c8008c7c42b155ae60d04908ebef56b3712868cfa30bd56fe1221ad98009"
+    },
+    {
+      "path": "evaluation/prompt-preservation-v2.jsonl",
+      "bytes": 24849,
+      "sha256": "7e42c7cfc3153b6c950242400f518bc62c06d89081bf55a722effdac890c9dd4"
+    },
+    {
+      "path": "evaluation/runs/20260921T212008+0800/cases.jsonl",
+      "bytes": 5295,
+      "sha256": "0f0566fd4c8886278eb8c10549fc8a3564f6e2e8f7672578347388906ea30138"
+    },
+    {
+      "path": "evaluation/runs/20260921T212008+0800/report.md",
+      "bytes": 3245,
+      "sha256": "b4fe47433871cc53e090bb009fcba68b5ad9394bee4cf2a14183093285a069bb"
+    },
+    {
+      "path": "evaluation/runs/20260921T212008+0800/summary.json",
+      "bytes": 4758,
+      "sha256": "42673e9bc8164a6e1b3ddd460465c4e365316eaacb7d39e6528b8a92c30cd1df"
+    },
+    {
+      "path": "evaluation/runs/v2/20260921T213420+0800/cases.jsonl",
+      "bytes": 8326,
+      "sha256": "169798ad8179d166fd3b9b3fde80742023ed37f4da8e92f40c6f10bbd5101ebc"
+    },
+    {
+      "path": "evaluation/runs/v2/20260921T213420+0800/report.md",
+      "bytes": 6203,
+      "sha256": "ae2f6abcf9bf246747a2807a10ec40c7a77aad575a9f58b441558b2d57aecaec"
+    },
+    {
+      "path": "evaluation/runs/v2/20260921T213420+0800/summary.json",
+      "bytes": 16736,
+      "sha256": "af91ccb62f1081bd320e65b228a93d4608405f36d413f219340c272b44251c15"
+    },
+    {
+      "path": "examples/README.md",
+      "bytes": 1519,
+      "sha256": "744e866dc1a514edb6a62d2fb6051e098af7eacd5c2eda2dbacec2cedf18ae71"
+    },
+    {
+      "path": "examples/context-batch.json",
+      "bytes": 228,
+      "sha256": "1d007001969f81f4b9b806e837c266e6b1c7179ecb5e4ef621c55974a5082831"
+    },
+    {
+      "path": "examples/context.json",
+      "bytes": 472,
+      "sha256": "48afa8798c9a5616d0f85f2f0c890e879795c4315474b56afe42125837f1aeda"
+    },
+    {
+      "path": "examples/questions.json",
+      "bytes": 1222,
+      "sha256": "6f89501ff99602d3d6a3f9ad91e7ba6e9befdb35672f4603328bf5a9164ca8b3"
+    },
+    {
+      "path": "examples/result.mock.json",
+      "bytes": 1936,
+      "sha256": "48400a1f071b89db92c909f31fddc2087b1519eb5f6abcf7174c0bcda78fb716"
+    },
+    {
+      "path": "local-runtime/.gitignore",
+      "bytes": 11,
+      "sha256": "10edf395121888b825269ff19c83f8531dc38df96c5927b2e09a6cfc6e86d06a"
+    },
+    {
+      "path": "local-runtime/README.md",
+      "bytes": 1059,
+      "sha256": "99602276d5c114fd44651c28836f9e7a4156947328011ed82ffc188643f362e0"
+    },
+    {
+      "path": "local-runtime/run_comfyui_with_jev.cmd",
+      "bytes": 95,
+      "sha256": "d90b9ed26cf93cea935401f894aed654e5412dc0af3c856f549f4fe00378d30b"
+    },
+    {
+      "path": "local-runtime/run_comfyui_with_jev.ps1",
+      "bytes": 2092,
+      "sha256": "78b96a7f1313a491b7839f93f453a54f24e934b431eb7164f4847a23039a3606"
+    },
+    {
+      "path": "output/playwright/semantic-judge-interop.png",
+      "bytes": 202147,
+      "sha256": "5ab84ebb61d83a6cb5a25d2137dfbe0cda22b632afa82b76ba108c1c87fdf333"
+    },
+    {
+      "path": "output/playwright/semantic-judge-multitype.png",
+      "bytes": 136300,
+      "sha256": "7e7cae793c6d6fceafa0b43833356655da073d561a81ceabc66be70ba36aead3"
+    },
+    {
+      "path": "plugin/ComfyUI-Jev-Decision/README.md",
+      "bytes": 5380,
+      "sha256": "8fa888662babbc9ee0f19eaff91cd75d2b163766678a32d9e164c7c5ba474c2b"
+    },
+    {
+      "path": "plugin/ComfyUI-Jev-Decision/__init__.py",
+      "bytes": 167,
+      "sha256": "fede19321102043f8fef9f66c9ec9b51c477884bd3cb1a0125aa5bb537d8b8b9"
+    },
+    {
+      "path": "plugin/ComfyUI-Jev-Decision/backend.py",
+      "bytes": 4003,
+      "sha256": "108360a597844d155d937075e3f15e81f69ee2a336edb7429310f8a7325c8b6b"
+    },
+    {
+      "path": "plugin/ComfyUI-Jev-Decision/decision_nodes.py",
+      "bytes": 4867,
+      "sha256": "5568c598c515e6bf0e6a69f02ab5291e4f8d9b6a6e6d11ab6b625e44d68c7fda"
+    },
+    {
+      "path": "plugin/ComfyUI-Jev-Decision/decision_protocol.py",
+      "bytes": 15869,
+      "sha256": "818a124f3c10cd59f2ab3fd0613d22e40cfd8654aac8286ae298af6cb49b753d"
+    },
+    {
+      "path": "plugin/ComfyUI-Jev-Decision/examples/semantic-judge-choice.api.json",
+      "bytes": 1357,
+      "sha256": "2e953dac3331c9517a49f2ca43d64c2db24530ce6b2012bfadd0139c1900b4fe"
+    },
+    {
+      "path": "plugin/ComfyUI-Jev-Decision/examples/semantic-judge-interop.api.json",
+      "bytes": 2257,
+      "sha256": "eaae8b4d5a23cb64349be525544148c1de0fbcb5995fbbf1ce642df53c5014e2"
+    },
+    {
+      "path": "plugin/ComfyUI-Jev-Decision/examples/semantic-judge-interop.workflow.json",
+      "bytes": 16641,
+      "sha256": "1b7e69791ed6bc760aa5c1ce5e16f6330b77be89728a4cf6e05442e9c300a6bf"
+    },
+    {
+      "path": "plugin/ComfyUI-Jev-Decision/examples/semantic-judge-multitype.api.json",
+      "bytes": 1057,
+      "sha256": "357b916a7c85d9415e41013aedd3c70d363bb3c09ff641afa67cd39e0efa8496"
+    },
+    {
+      "path": "plugin/ComfyUI-Jev-Decision/examples/semantic-judge-multitype.workflow.json",
+      "bytes": 9429,
+      "sha256": "56ca8f177a016b6c849d7d98f00caf4f9bc2dc9aa8ad8830df7352006b01f4e7"
+    },
+    {
+      "path": "plugin/ComfyUI-Jev-Decision/examples/semantic-judge-noul.api.json",
+      "bytes": 1378,
+      "sha256": "7becbcbba5bd6111834dc8350c7c42f35216b05d226c4a44fed4e3f1ed3b6bdc"
+    },
+    {
+      "path": "plugin/ComfyUI-Jev-Decision/examples/semantic-judge-score.api.json",
+      "bytes": 1327,
+      "sha256": "43b275d7cb5bd141581cb0575e3939fc59fa25c97f41633306fd4607ad27fbd4"
+    },
+    {
+      "path": "plugin/ComfyUI-Jev-Decision/provider.py",
+      "bytes": 3633,
+      "sha256": "92edeea6e2958ca1744dd0c9e44a17d81f056e8e1915d55c2f75969965794cac"
+    },
+    {
+      "path": "plugin/ComfyUI-Jev-Decision/pyproject.toml",
+      "bytes": 327,
+      "sha256": "4c50b73f151b5958e79eb27cdea5492afb3917890b8b02b2f046de68ccc9c2b4"
+    },
+    {
+      "path": "plugin/ComfyUI-Jev-Decision/tests/__init__.py",
+      "bytes": 43,
+      "sha256": "8c7cb1625026bbddea6856dc3e0f490c86553fe0f03a62f4889295167fa5bd1a"
+    },
+    {
+      "path": "plugin/ComfyUI-Jev-Decision/tests/test_comfy_execution.py",
+      "bytes": 12630,
+      "sha256": "98192af1a7b1d343aa4218bd84cc5b7ad2e2e9f5e81d8807c6de68b2f4afbd07"
+    },
+    {
+      "path": "plugin/ComfyUI-Jev-Decision/tests/test_nodes.py",
+      "bytes": 6528,
+      "sha256": "fa1a8e32c27d3eb34ac45c7e338f4437d223406696d7c7c524c3a62bcdcfc7fa"
+    },
+    {
+      "path": "plugin/ComfyUI-Jev-Decision/tests/test_protocol.py",
+      "bytes": 15221,
+      "sha256": "55879400836e34814ce043792e6bf8c7901589ff57e08b7341c7b0142e1ff29a"
+    },
+    {
+      "path": "plugin/ComfyUI-Jev-Decision/tests/test_provider.py",
+      "bytes": 13065,
+      "sha256": "4b228533c3b5cb1822f183e343f4a932e36e4cf14d9a7cf4a64cb5262d750016"
+    },
+    {
+      "path": "records/GOV-20260921-001-validation.json",
+      "bytes": 864,
+      "sha256": "629b924099e9e87ae23e69f07be77717e05b6b0cf40968effe31964f8aa07763"
+    },
+    {
+      "path": "records/P0-20260921-001-validation.json",
+      "bytes": 2287,
+      "sha256": "f17e3c87824e9700e61b9220a933c8ff7ce5c817ede5d5f1db4c49033b10d80d"
+    },
+    {
+      "path": "records/REDESIGN-20260921-001-baseline.json",
+      "bytes": 881,
+      "sha256": "b71d2553ef162932ce4654212666ac071f78a8eb1ab0ebb27d0b819569b82927"
+    },
+    {
+      "path": "records/REDESIGN-20260921-001-validation.json",
+      "bytes": 1515,
+      "sha256": "9dd925950e65c23f60ae971417e3f3da93d21a6a31cb785d1d3ab39e92b133e2"
+    },
+    {
+      "path": "records/SJ-P0-20260921-001-validation.json",
+      "bytes": 4317,
+      "sha256": "2b71dfc828c62dab11d51a554711a2d770a60c52bd78ca301c77cf9b169f0654"
+    },
+    {
+      "path": "records/SJ-P0.1-20260921-001-validation.json",
+      "bytes": 5028,
+      "sha256": "217c7ef75ac594983981214742140fe5c525fa5d4e050aba23ca5c8bcd0ce04d"
+    },
+    {
+      "path": "records/SJ-P0.2-20260921-001-validation.json",
+      "bytes": 5509,
+      "sha256": "6daa755ad9b6d6a7eb0d00095d4a7b254aa09ade6b64ae47a1934147e65e7db4"
+    },
+    {
+      "path": "records/SJ18-20260921-001-validation.json",
+      "bytes": 3646,
+      "sha256": "c8ba2e3872ad068c4030c5af30135e3a83a461e08616f5c592f1d30684f3d056"
+    },
+    {
+      "path": "records/SJ18-V2-20260921-001-validation.json",
+      "bytes": 5956,
+      "sha256": "98d24de734ead9267266a1293f2ad8c6235a87e82c14f6bd4ba9d36642120920"
+    },
+    {
+      "path": "records/TASK-TEMPLATE.md",
+      "bytes": 1251,
+      "sha256": "dd784f887ca10a30a811776eea389f749348555a8cd2943ca336f017b9927aec"
+    },
+    {
+      "path": "records/artifacts/ComfyUI-Jev-Decision-P0-baseline-20260921T0854+0800.zip",
+      "bytes": 67823,
+      "sha256": "a9c71a714566f64a653dcfe6c0dde534645872a1f5625747d918267638bec370"
+    },
+    {
+      "path": "tests/test_prompt_preservation_eval.py",
+      "bytes": 3706,
+      "sha256": "ad4338ea4d52886c6b07d8ecc23a90955641c8efedea48ee3cb2b2fffd3b034e"
+    },
+    {
+      "path": "tests/test_prompt_preservation_v2.py",
+      "bytes": 2945,
+      "sha256": "4c3badfaffc0a2334cf573fa885c291fb7828d2252ecde2ddd9eb6d9fcd04c6c"
+    },
+    {
+      "path": "tools/evaluate_prompt_preservation.py",
+      "bytes": 23911,
+      "sha256": "de315932175bf406c31518dbfb8204e76bb50b18f6685a1992034940e1475e03"
+    },
+    {
+      "path": "tools/evaluate_prompt_preservation_v2.py",
+      "bytes": 28688,
+      "sha256": "8c503a0e627241a8bdc9b88b3e2fae2135b40882cf1d6e6587561edad90c1122"
+    },
+    {
+      "path": "tools/frontend_multitype_roundtrip.js",
+      "bytes": 4361,
+      "sha256": "a7d855cb7af2edd27d75cd3a38b74488e0504050aa62450247f517226a441033"
+    },
+    {
+      "path": "tools/frontend_roundtrip.js",
+      "bytes": 5185,
+      "sha256": "5344efb628c33ddf442c8095adfb0f50510c8936dca09067fa6b30272c55cb2b"
+    },
+    {
+      "path": "tools/real_smoke.py",
+      "bytes": 3752,
+      "sha256": "0ca851f51f48b670be141536e7be6d0e78d1a39d918de1b6650555f7ca92ab98"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "0": {
+    "class_type": "PrimitiveStringMultiline",
+    "inputs": {
+      "value": "Original: Two adult women on a rainy city street at night, anime style, wide shot, no umbrellas.\nCandidate: Wide anime night view of two adult women together on a rain-soaked city street without umbrellas, with reflected neon light."
+    }
+  },
+  "1": {
+    "class_type": "JevSemanticJudge",
+    "inputs": {
+      "context": [
+        "0",
+        0
+      ],
+      "instructions": "Does the candidate preserve every concrete requirement and prohibition in the original without changing its meaning? Compatible added detail is allowed.",
+      "mode": "Noul",
+      "options": "",
+      "threshold": 0.8,
+      "model": "jev-latest",
+      "connection_profile": "default",
+      "refresh": 0
+    }
+  },
+  "2": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "1",
+        0
+      ]
+    }
+  },
+  "3": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "1",
+        1
+      ]
+    }
+  },
+  "4": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "1",
+        2
+      ]
+    }
+  },
+  "5": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "1",
+        3
+      ]
+    }
+  },
+  "6": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "1",
+        4
+      ]
+    }
+  }
+}
